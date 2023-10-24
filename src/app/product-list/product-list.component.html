@@ -1,0 +1,28 @@
+<div style=" display: flex;justify-content: center; align-items: center; height: 100vh; width: 80%; padding: 20px; ">
+  <table class="table" style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
+    <thead>
+      <tr>
+        <th style="background-color: #58D68D; color: white; font-weight: bold; padding: 10px;">ID</th>
+        <th style="background-color: #333; color: white; font-weight: bold; padding: 10px;">Código</th>
+        <th style="background-color: #333; color: white; font-weight: bold; padding: 10px;">Descripción</th>
+        <th style="background-color: #333; color: white; font-weight: bold; padding: 10px;">Precio</th>
+        <th style="background-color: #3498DB ; color: white; font-weight: bold; padding: 10px;">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos">
+        <td style="padding: 8px;">{{ producto.id }}</td>
+        <td style="padding: 8px;">{{ producto.codigo }}</td>
+        <td style="padding: 8px;">{{ producto.descripcion }}</td>
+        <td style="padding: 8px;">{{ producto.precio }}</td>
+        <td style="padding: 8px; text-align: center;"> 
+          <a [routerLink]="'/productos/edit/' + producto.id" style="text-decoration: none; color: #007bff; cursor: pointer; display: block;">Editar</a>
+          <button (click)="deleteProducto(producto)" style="background-color: #dc3545; color: white; border: none; padding: 5px 10px; cursor: pointer;">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+ 

@@ -1,0 +1,21 @@
+<div class="form-container">
+  <h2>{{ editing ? 'Editar Producto' : 'Agregar Producto' }}</h2>
+  <form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="codigo">Código</label>
+      <input type="text" id="codigo" name="codigo" [(ngModel)]="nuevoProducto.codigo" required>
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <input type="text" id="descripcion" name="descripcion" [(ngModel)]="nuevoProducto.descripcion" required>
+    </div>
+    <div class="form-group">
+      <label for="precio">Precio</label>
+      <input type="number" id="precio" name="precio" [(ngModel)]="nuevoProducto.precio" required>
+    </div>
+    <button type="submit">{{ editing ? 'Guardar Cambios' : 'Agregar Producto' }}</button>
+  </form>
+</div>
+
+  
+  
