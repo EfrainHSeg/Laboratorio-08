@@ -3,7 +3,7 @@
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
 ## Autores
--[Efrain Huaman Segura ] (https://github.com/EfrainHSeg).
+Efrain Huaman Segura (https://github.com/EfrainHSeg).
 
 ## Development server
 
